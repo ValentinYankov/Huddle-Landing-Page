@@ -1,0 +1,65 @@
+@use "../abstracts/" as a;
+
+.hero__image {
+  margin-top: 5rem;
+}
+
+.hero__body {
+  text-align: center;
+  align-items: center;
+  
+  @media (min-width: 1336px) {
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-top: 3.5rem;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+.hero__heading {
+  margin-top: 5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 3.1rem;
+  line-height: 1.4;
+}
+
+.hero__heading--white {
+  color: #fff;
+}
+
+.hero__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.75rem;
+  max-width: 42ch;
+  line-height: 1.4;
+  margin-top: 2.33rem;
+}
+
+.hero__text--white {
+  color: #fff;
+}
+
+.hero__link,
+.hero__link:visited {
+  color: a.$clr-violet;
+  text-decoration: none;
+  background: #fff;
+  border-radius: 100vmax;
+  padding: 0.8rem 6.2rem;
+  font-size: 1.2rem;
+  outline: 0;
+  box-shadow: 0 3px 3px rgba(#222, 0.5);
+  margin-top: 2.33rem;
+
+  &:hover {
+    color: #fff;
+    background-color: a.$clr-soft-magenta;
+  }
+
+  @media (min-width: 1336px) {
+    padding: 1rem 5rem;
+  }
+}

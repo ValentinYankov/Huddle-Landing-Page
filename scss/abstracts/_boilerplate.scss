@@ -1,0 +1,39 @@
+@use "colors" as c;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(/dist/images/bg-mobile.svg);
+  background-color: c.$clr-violet;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0 auto;
+
+  @media (min-width: 1336px) {
+    background-image: url(/dist/images/bg-desktop.svg);
+  }
+}
+
+.container {
+  $max-width: 1200px;
+  $padding: 2rem;
+
+  width: min($max-width, 100% - $padding);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 1336px) {
+    flex-direction: row;
+  }
+}

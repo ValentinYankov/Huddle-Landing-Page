@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(/dist/images/bg-mobile.svg);
+  background-color: hsl(257deg, 40%, 49%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 1336px) {
+  body {
+    background-image: url(/dist/images/bg-desktop.svg);
+  }
+}
+
+.container {
+  width: min(1200px, 100% - 2rem);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1336px) {
+  .flex {
+    flex-direction: row;
+  }
+}
+
+.hero__image {
+  margin-top: 5rem;
+}
+
+.hero__body {
+  text-align: center;
+  align-items: center;
+}
+@media (min-width: 1336px) {
+  .hero__body {
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-top: 3.5rem;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+.hero__heading {
+  margin-top: 5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 3.1rem;
+  line-height: 1.4;
+}
+
+.hero__heading--white {
+  color: #fff;
+}
+
+.hero__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.75rem;
+  max-width: 42ch;
+  line-height: 1.4;
+  margin-top: 2.33rem;
+}
+
+.hero__text--white {
+  color: #fff;
+}
+
+.hero__link,
+.hero__link:visited {
+  color: hsl(257deg, 40%, 49%);
+  text-decoration: none;
+  background: #fff;
+  border-radius: 100vmax;
+  padding: 0.8rem 6.2rem;
+  font-size: 1.2rem;
+  outline: 0;
+  box-shadow: 0 3px 3px rgba(34, 34, 34, 0.5);
+  margin-top: 2.33rem;
+}
+.hero__link:hover,
+.hero__link:visited:hover {
+  color: #fff;
+  background-color: hsl(300deg, 69%, 71%);
+}
+@media (min-width: 1336px) {
+  .hero__link,
+.hero__link:visited {
+    padding: 1rem 5rem;
+  }
+}
+
+.social__links {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.social__links li {
+  list-style-type: none;
+}
+@media (min-width: 1336px) {
+  .social__links {
+    justify-content: flex-end;
+  }
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+  border: solid 1px #fff;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+.logo__container {
+  width: 210px;
+  height: 50px;
+  margin-top: 1.5rem;
+}
+.logo__container a {
+  display: block;
+}
+
+.logo {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

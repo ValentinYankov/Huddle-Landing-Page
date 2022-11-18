@@ -1,0 +1,25 @@
+@use "../abstracts/" as a;
+
+.social__links {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  li {
+    list-style-type: none;
+  }
+
+  @media (min-width: 1336px) {
+    justify-content: flex-end;
+  }
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+  border: solid 1px #fff;
+  border-radius: 100%;
+  padding: 5px;
+}
